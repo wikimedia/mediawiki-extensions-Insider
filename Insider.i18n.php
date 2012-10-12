@@ -109,5 +109,3 @@ $messages['sv'] = array(
 $messages['zh'] = array(
 	'ins-Insider'   => 'Docents',
 );
-
-?>
