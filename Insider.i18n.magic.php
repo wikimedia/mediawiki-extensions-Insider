@@ -9,5 +9,5 @@
 $magicWords = array();
 
 $magicWords['en'] = array(
-	'insider' => array( 0, 'insider' )
+	'insider' => array( 0, 'insider' ),
 );

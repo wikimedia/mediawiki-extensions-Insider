@@ -9,29 +9,36 @@
 $messages = array();
 
 $messages['en'] = array(
-	'insider-desc' => 'Presentation of destination docents on the sidebar',
-	'insider-insider' => 'Destination Docents',
+	'insider-title' => 'Destination Docents',
 	'insider-about' => 'About Docents',
-	'insider-aboutpage' => '{{ns:project}}:What is a docent?',
+	'insider-about-page' => 'Project:What is a docent?',
+	'insider-desc'  => 'Extension for presentation of destination docents on the sidebar',
 );
 
-/** Message documentation (Message documentation)
- * @author Metalhead64
- */
 $messages['qqq'] = array(
-	'insider-desc' => '{{desc}}',
+	'insider-title' => 'Title for the insider panel',
+	'insider-about' => 'Text for the last link, below all insiders, to insiders explanation page',
+	'insider-about-page' => 'Page title for the last link, below all insiders, to insiders explanation page',
+	'insider-desc'  => '{{desc}}',
+);
+
+$messages['de'] = array(
+	'insider-title' => 'Insider',
+	'insider-about' => 'Über Insider',
+	'insider-about-page' => 'Project:Insider',
+	'insider-desc'  => 'Erweiterung für die Ausgabe von Insidern auf der Sidebar',
 );
 
 /** Arabic (العربية)
  */
 $messages['ar'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Catalan (català)
  */
 $messages['ca'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** German (Deutsch)
@@ -55,34 +62,34 @@ $messages['diq'] = array(
 /** Esperanto (Esperanto)
  */
 $messages['eo'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
-	'insider-desc' => 'Presentación de las guías de destino en la barra lateral',
-	'insider-insider' => 'Docentes del destino',
+	'insider-title' => 'Docentes del destino',
 	'insider-about' => 'Sobre docentes',
-	'insider-aboutpage' => 'Project:Docentes',
+	'insider-about-page' => 'Project:Docentes',
+	'insider-desc' => 'Presentación de las guías de destino en la barra lateral',
 );
 
 /** Finnish (suomi)
  * @author Nike
  */
 $messages['fi'] = array(
-	'insider-insider' => 'Docents', # Fuzzy
+	'insider-title' => 'Docents',
 );
 
 /** French (français)
  * @author Gomoko
  */
 $messages['fr'] = array(
-	'insider-desc' => 'Présentation des guides de destination dans la barre latérale',
-	'insider-insider' => 'Enseignants',
+	'insider-title' => 'Enseignants',
 	'insider-about' => 'Sur enseignants',
-	'insider-aboutpage' => 'Project:Enseignants',
+	'insider-about-page' => 'Project:Enseignants',
+	'insider-desc' => 'Présentation des guides de destination dans la barre latérale',
 );
 
 /** Galician (galego)
@@ -98,13 +105,13 @@ $messages['gl'] = array(
 /** Hebrew (עברית)
  */
 $messages['he'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Hindi (हिन्दी)
  */
 $messages['hi'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -120,24 +127,24 @@ $messages['hsb'] = array(
 /** Hungarian (magyar)
  */
 $messages['hu'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
-	'insider-desc' => 'Presentazione dei docenti di destinazione nella barra laterale',
-	'insider-insider' => 'Docenti dell’articolo',
+	'insider-title' => 'Docenti dell’articolo',
 	'insider-about' => 'Riguardo i docenti',
-	'insider-aboutpage' => 'Project:Docenti',
+	'insider-about-page' => 'Project:Docenti',
+	'insider-desc' => 'Presentazione dei docenti di destinazione nella barra laterale',
 );
 
 /** Japanese (日本語)
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'insider-insider' => 'Docents', # Fuzzy
+	'insider-title' => 'Docents',
 	'insider-about' => 'Docents について',
 	'insider-aboutpage' => '{{ns:project}}:Docentとは?',
 );
@@ -145,7 +152,7 @@ $messages['ja'] = array(
 /** Korean (한국어)
  */
 $messages['ko'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Macedonian (македонски)
@@ -161,45 +168,45 @@ $messages['mk'] = array(
 /** Dutch (Nederlands)
  */
 $messages['nl'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Polish (polski)
  */
 $messages['pl'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Portuguese (português)
  */
 $messages['pt'] = array(
-	'insider-insider' => 'Docentes do destino',
+	'insider-title' => 'Docentes do destino',
 	'insider-about' => 'Sobre docentes',
-	'insider-aboutpage' => 'Project:O quê é um docente?',
+	'insider-about-page' => 'Project:O quê é um docente?',
 );
 
 /** Romanian (română)
  */
 $messages['ro'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
 
 /** Russian (русский)
  */
 $messages['ru'] = array(
-	'insider-insider' => 'Эксперты',
+	'insider-title' => 'Эксперты',
 	'insider-about' => 'Об экспертах',
-	'insider-aboutpage' => 'Project:Эксперты',
+	'insider-about-page' => 'Project:Эксперты',
 );
 
 /** Swedish (svenska)
  */
 $messages['sv'] = array(
-	'insider-insider' => 'Guider',
+	'insider-title' => 'Guider',
 	'insider-about' => 'Om guider',
-	'insider-aboutpage' => 'Project:Guider',
+	'insider-about-page' => 'Project:Guider',
 );
 
 $messages['zh'] = array(
-	'insider-insider' => 'Docents',
+	'insider-title' => 'Docents',
 );
