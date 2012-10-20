@@ -4,108 +4,108 @@
  *
  * @package MediaWiki
  * @subpackage Extensions
-*/
+ */
 
 $messages = array();
 
 $messages['en'] = array(
-	'ins-Insider'   => 'Destination Docents',
-	'ins-About'     => 'About Docents',
-	'ins-Aboutpage' => 'Project:What is a docent?',
-	'ins-desc'      => 'Extension for presentation of destination docents on the sidebar',
+	'insider-desc' => 'Presentation of destination docents on the sidebar',
+	'insider-insider' => 'Destination Docents',
+	'insider-about' => 'About Docents',
+	'insider-aboutpage' => '{{ns:project}}:What is a docent?',
 );
 
 $messages['de'] = array(
-	'ins-Insider'   => 'Insider',
-	'ins-About'     => 'Über Insider',
-	'ins-Aboutpage' => 'Project:Insider',
-	'ins-desc'      => 'Erweiterung für die Ausgabe von Insidern auf der Sidebar',
+	'insider-insider' => 'Insider',
+	'insider-about' => 'Über Insider',
+	'insider-aboutpage' => 'Project:Insider',
+	'insider-desc' => 'Erweiterung für die Ausgabe von Insidern auf der Sidebar',
 );
 
 $messages['ar'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['ca'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['eo'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['es'] = array(
-	'ins-Insider'   => 'Docentes del destino',
-	'ins-About'     => 'Sobre docentes',
-	'ins-Aboutpage' => 'Project:Docentes',
+	'insider-insider' => 'Docentes del destino',
+	'insider-about' => 'Sobre docentes',
+	'insider-aboutpage' => 'Project:Docentes',
 );
 
 $messages['fi'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['fr'] = array(
-	'ins-Insider'   => 'Enseignants',
-	'ins-About'     => 'Sur enseignants',
-	'ins-Aboutpage' => 'Project:Enseignants',
+	'insider-insider' => 'Enseignants',
+	'insider-about' => 'Sur enseignants',
+	'insider-aboutpage' => 'Project:Enseignants',
 );
 
 $messages['he'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['hi'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['hu'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['it'] = array(
-	'ins-Insider'   => 'Docenti dell’articolo',
-	'ins-About'     => 'Riguardo i docenti',
-	'ins-Aboutpage' => 'Project:Docenti',
+	'insider-insider' => 'Docenti dell’articolo',
+	'insider-about' => 'Riguardo i docenti',
+	'insider-aboutpage' => 'Project:Docenti',
 );
 
 $messages['ja'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['ko'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['nl'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['pl'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['pt'] = array(
-	'ins-Insider'   => 'Docentes do destino',
-	'ins-About'     => 'Sobre docentes',
-	'ins-Aboutpage' => 'Project:O quê é um docente?',
+	'insider-insider' => 'Docentes do destino',
+	'insider-about' => 'Sobre docentes',
+	'insider-aboutpage' => 'Project:O quê é um docente?',
 );
 
 $messages['ro'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
 
 $messages['ru'] = array(
-	'ins-Insider'   => 'Эксперты',
-	'ins-About'     => 'Об экспертах',
-	'ins-Aboutpage' => 'Project:Эксперты',
+	'insider-insider' => 'Эксперты',
+	'insider-about' => 'Об экспертах',
+	'insider-aboutpage' => 'Project:Эксперты',
 );
 
 $messages['sv'] = array(
-	'ins-Insider'   => 'Guider',
-	'ins-About'     => 'Om guider',
-	'ins-Aboutpage' => 'Project:Guider',
+	'insider-insider' => 'Guider',
+	'insider-about' => 'Om guider',
+	'insider-aboutpage' => 'Project:Guider',
 );
 
 $messages['zh'] = array(
-	'ins-Insider'   => 'Docents',
+	'insider-insider' => 'Docents',
 );
