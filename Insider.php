@@ -4,10 +4,11 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
 
-$wgExtensionCredits['parserhook']['Insider'] = array(
+$wgExtensionCredits['parserhook'][] = array(
+	'path' => __FILE__,
 	'name' => 'Insider',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Insider',
-	'author' => 'Roland Unger/Hans Musil',
+	'author' => array( 'Roland Unger', 'Hans Musil' ),
 	'descriptionmsg' => 'insider-desc'
 );
 
