@@ -15,6 +15,13 @@ $messages['en'] = array(
 	'insider-aboutpage' => '{{ns:project}}:What is a docent?',
 );
 
+/** Message documentation (Message documentation)
+ * @author Metalhead64
+ */
+$messages['qqq'] = array(
+	'insider-desc' => '{{desc}}',
+);
+
 /** Arabic (العربية)
  */
 $messages['ar'] = array(
@@ -31,8 +38,8 @@ $messages['ca'] = array(
  * @author Metalhead64
  */
 $messages['de'] = array(
-	'insider-desc' => 'Ermöglicht die Präsentation von Reisezieldozenten in der Seitenleiste',
-	'insider-insider' => 'Reisezieldozenten',
+	'insider-desc' => 'Ermöglicht die Präsentation von Einrichtungsdozenten in der Seitenleiste',
+	'insider-insider' => 'Einrichtungsdozenten',
 	'insider-about' => 'Über Dozenten',
 	'insider-aboutpage' => '{{ns:project}}:Was ist ein Dozent?',
 );
@@ -44,8 +51,10 @@ $messages['eo'] = array(
 );
 
 /** Spanish (español)
+ * @author Armando-Martin
  */
 $messages['es'] = array(
+	'insider-desc' => 'Presentación de las guías de destino en la barra lateral',
 	'insider-insider' => 'Docentes del destino',
 	'insider-about' => 'Sobre docentes',
 	'insider-aboutpage' => 'Project:Docentes',
@@ -58,8 +67,10 @@ $messages['fi'] = array(
 );
 
 /** French (français)
+ * @author Gomoko
  */
 $messages['fr'] = array(
+	'insider-desc' => 'Présentation des guides de destination dans la barre latérale',
 	'insider-insider' => 'Enseignants',
 	'insider-about' => 'Sur enseignants',
 	'insider-aboutpage' => 'Project:Enseignants',
@@ -94,23 +105,38 @@ $messages['hu'] = array(
 );
 
 /** Italian (italiano)
+ * @author Beta16
  */
 $messages['it'] = array(
+	'insider-desc' => 'Presentazione dei docenti di destinazione nella barra laterale',
 	'insider-insider' => 'Docenti dell’articolo',
 	'insider-about' => 'Riguardo i docenti',
 	'insider-aboutpage' => 'Project:Docenti',
 );
 
 /** Japanese (日本語)
+ * @author Shirayuki
  */
 $messages['ja'] = array(
-	'insider-insider' => 'Docents',
+	'insider-insider' => 'Docents', # Fuzzy
+	'insider-about' => 'Docents について',
+	'insider-aboutpage' => '{{ns:project}}:Docentとは?',
 );
 
 /** Korean (한국어)
  */
 $messages['ko'] = array(
 	'insider-insider' => 'Docents',
+);
+
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'insider-desc' => 'Претставување на доценти за одредишта во страничниот алатник',
+	'insider-insider' => 'Доценти за одредишта',
+	'insider-about' => 'За доцентите',
+	'insider-aboutpage' => '{{ns:project}}:Што е тоа доцент?',
 );
 
 /** Dutch (Nederlands)
