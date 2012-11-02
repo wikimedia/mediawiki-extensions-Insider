@@ -44,6 +44,13 @@ $messages['de'] = array(
 	'insider-aboutpage' => '{{ns:project}}:Was ist ein Dozent?',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'insider-about' => 'Heqdê Doçentan',
+);
+
 /** Esperanto (Esperanto)
  */
 $messages['eo'] = array(
@@ -61,9 +68,10 @@ $messages['es'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Nike
  */
 $messages['fi'] = array(
-	'insider-insider' => 'Docents',
+	'insider-insider' => 'Docents', # Fuzzy
 );
 
 /** French (français)
@@ -74,6 +82,16 @@ $messages['fr'] = array(
 	'insider-insider' => 'Enseignants',
 	'insider-about' => 'Sur enseignants',
 	'insider-aboutpage' => 'Project:Enseignants',
+);
+
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'insider-desc' => 'Presentación das guías de destino na barra lateral',
+	'insider-insider' => 'Guías de destino',
+	'insider-about' => 'Acerca das guías',
+	'insider-aboutpage' => '{{ns:project}}:Que é unha guía?',
 );
 
 /** Hebrew (עברית)
