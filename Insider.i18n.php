@@ -46,9 +46,10 @@ $messages['de'] = array(
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['diq'] = array(
-	'insider-about' => 'Heqdê Doçentan',
+	'insider-about' => 'Doçentan Sero',
 );
 
 /** Esperanto (Esperanto)
