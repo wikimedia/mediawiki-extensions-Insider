@@ -15,18 +15,14 @@ $messages['en'] = array(
 	'insider-desc'  => 'Extension for presentation of destination docents on the sidebar',
 );
 
+/** Message documentation (Message documentation)
+ * @author Metalhead64
+ */
 $messages['qqq'] = array(
 	'insider-title' => 'Title for the insider panel',
 	'insider-about' => 'Text for the last link, below all insiders, to insiders explanation page',
 	'insider-about-page' => 'Page title for the last link, below all insiders, to insiders explanation page',
-	'insider-desc'  => '{{desc}}',
-);
-
-$messages['de'] = array(
-	'insider-title' => 'Insider',
-	'insider-about' => 'Über Insider',
-	'insider-about-page' => 'Project:Insider',
-	'insider-desc'  => 'Erweiterung für die Ausgabe von Insidern auf der Sidebar',
+	'insider-desc' => '{{desc}}',
 );
 
 /** Arabic (العربية)
@@ -45,10 +41,8 @@ $messages['ca'] = array(
  * @author Metalhead64
  */
 $messages['de'] = array(
-	'insider-desc' => 'Ermöglicht die Präsentation von Einrichtungsdozenten in der Seitenleiste',
-	'insider-insider' => 'Einrichtungsdozenten',
 	'insider-about' => 'Über Dozenten',
-	'insider-aboutpage' => '{{ns:project}}:Was ist ein Dozent?',
+	'insider-desc' => 'Ermöglicht die Präsentation von Einrichtungsdozenten in der Seitenleiste',
 );
 
 /** Zazaki (Zazaki)
@@ -96,10 +90,8 @@ $messages['fr'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'insider-desc' => 'Presentación das guías de destino na barra lateral',
-	'insider-insider' => 'Guías de destino',
 	'insider-about' => 'Acerca das guías',
-	'insider-aboutpage' => '{{ns:project}}:Que é unha guía?',
+	'insider-desc' => 'Presentación das guías de destino na barra lateral',
 );
 
 /** Hebrew (עברית)
@@ -118,10 +110,8 @@ $messages['hi'] = array(
  * @author Michawiki
  */
 $messages['hsb'] = array(
-	'insider-desc' => 'Prezentowanje cilowych docentow w bóčnicy',
-	'insider-insider' => 'Cilowi docentojo',
 	'insider-about' => 'Wo docentach',
-	'insider-aboutpage' => '{{ns:project}}:Što je docent?',
+	'insider-desc' => 'Prezentowanje cilowych docentow w bóčnicy',
 );
 
 /** Hungarian (magyar)
@@ -146,7 +136,6 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'insider-title' => 'Docents',
 	'insider-about' => 'Docents について',
-	'insider-aboutpage' => '{{ns:project}}:Docentとは?',
 );
 
 /** Korean (한국어)
@@ -159,10 +148,10 @@ $messages['ko'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'insider-desc' => 'Претставување на доценти за одредишта во страничниот алатник',
-	'insider-insider' => 'Доценти за одредишта',
+	'insider-title' => 'Доценти за одредишта',
 	'insider-about' => 'За доцентите',
-	'insider-aboutpage' => '{{ns:project}}:Што е тоа доцент?',
+	'insider-about-page' => 'Project:Што е тоа доцент?',
+	'insider-desc' => 'Претставување на доценти за одредишта во страничниот алатник',
 );
 
 /** Dutch (Nederlands)
