@@ -41,7 +41,9 @@ $messages['ca'] = array(
  * @author Metalhead64
  */
 $messages['de'] = array(
+	'insider-title' => 'Einrichtungsdozenten',
 	'insider-about' => 'Über Dozenten',
+	'insider-about-page' => 'Project:Was ist ein Dozent?',
 	'insider-desc' => 'Ermöglicht die Präsentation von Einrichtungsdozenten in der Seitenleiste',
 );
 
@@ -90,14 +92,20 @@ $messages['fr'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'insider-about' => 'Acerca das guías',
-	'insider-desc' => 'Presentación das guías de destino na barra lateral',
+	'insider-title' => 'Docentes de destino',
+	'insider-about' => 'Acerca dos docentes',
+	'insider-about-page' => 'Project:Que é un docente?',
+	'insider-desc' => 'Presentación dos docentes de destino na barra lateral',
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  */
 $messages['he'] = array(
-	'insider-title' => 'Docents',
+	'insider-title' => 'מומחי יעד',
+	'insider-about' => 'אודות המומחים',
+	'insider-about-page' => 'Project:מיהו מומחה?',
+	'insider-desc' => 'הרחבה להצגת מומחים ליעד בסרגל הצד',
 );
 
 /** Hindi (हिन्दी)
@@ -136,6 +144,7 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'insider-title' => 'Docents',
 	'insider-about' => 'Docents について',
+	'insider-about-page' => 'Project:Docentとは?',
 );
 
 /** Korean (한국어)
