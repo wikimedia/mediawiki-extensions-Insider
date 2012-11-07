@@ -163,10 +163,24 @@ $messages['mk'] = array(
 	'insider-desc' => 'Претставување на доценти за одредишта во страничниот алатник',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'insider-title' => 'Pemandu Destinasi',
+	'insider-about' => 'Tentang Pemandu',
+	'insider-about-page' => 'Project:Apakah itu pemandu?',
+	'insider-desc' => 'Sambungan untuk pembentangan pemandu destinasi pada palang sisi',
+);
+
 /** Dutch (Nederlands)
+ * @author Siebrand
  */
 $messages['nl'] = array(
 	'insider-title' => 'Docents',
+	'insider-about' => 'Over docenten',
+	'insider-about-page' => '{{ns:project}}:Wat is een docent?',
+	'insider-desc' => 'Uitbreiding voor presentatie van bestemmingsdocenten in de navigatiekolom',
 );
 
 /** Polish (polski)
