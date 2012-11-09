@@ -219,6 +219,16 @@ $messages['sv'] = array(
 	'insider-about-page' => 'Project:Guider',
 );
 
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'insider-title' => 'Người thông thuộc',
+	'insider-about' => 'Về người thông thuộc',
+	'insider-about-page' => 'Project:Người thông thuộc là gì?',
+	'insider-desc' => 'Phần mở rộng liệt kê những người thông thuộc với địa phương vào thanh bên',
+);
+
 $messages['zh'] = array(
 	'insider-title' => 'Docents',
 );
