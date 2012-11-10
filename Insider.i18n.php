@@ -118,7 +118,9 @@ $messages['hi'] = array(
  * @author Michawiki
  */
 $messages['hsb'] = array(
+	'insider-title' => 'Cilowi docentojo',
 	'insider-about' => 'Wo docentach',
+	'insider-about-page' => 'Project:Što je docent?',
 	'insider-desc' => 'Prezentowanje cilowych docentow w bóčnicy',
 );
 
