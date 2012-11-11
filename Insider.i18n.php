@@ -17,12 +17,13 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Metalhead64
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
 	'insider-title' => 'Title for the insider panel',
 	'insider-about' => 'Text for the last link, below all insiders, to insiders explanation page',
 	'insider-about-page' => 'Page title for the last link, below all insiders, to insiders explanation page',
-	'insider-desc' => '{{desc}}',
+	'insider-desc' => '{{desc|name=Insider|url=http://www.mediawiki.org/wiki/Extension:Insider}}',
 );
 
 /** Arabic (العربية)
