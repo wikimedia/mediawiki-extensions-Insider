@@ -53,6 +53,7 @@ $messages['de'] = array(
  * @author Mirzali
  */
 $messages['diq'] = array(
+	'insider-title' => 'Hedef Doçenti',
 	'insider-about' => 'Doçentan Sero',
 );
 
