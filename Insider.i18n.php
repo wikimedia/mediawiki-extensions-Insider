@@ -215,6 +215,15 @@ $messages['ru'] = array(
 	'insider-about-page' => 'Project:Эксперты',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'insider-title' => 'ගමනාන්ත ඩොසන්ට්',
+	'insider-about' => 'ඩොසන්ට් පිළිබඳ',
+	'insider-about-page' => 'Project:ඩොසන්ට් යනු කුමක්ද?',
+);
+
 /** Swedish (svenska)
  */
 $messages['sv'] = array(
