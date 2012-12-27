@@ -152,9 +152,13 @@ $messages['ja'] = array(
 );
 
 /** Korean (한국어)
+ * @author 아라
  */
 $messages['ko'] = array(
 	'insider-title' => 'Docents',
+	'insider-about' => 'Docents 소개',
+	'insider-about-page' => 'Project:Docents는 무엇입니까?',
+	'insider-desc' => '사이드바에 대상 docents의 발표를 위한 확장 기능',
 );
 
 /** Macedonian (македонски)
