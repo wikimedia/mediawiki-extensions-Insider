@@ -197,6 +197,16 @@ $messages['pl'] = array(
 	'insider-title' => 'Docents',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'insider-title' => 'Magister ëd Destinassion',
+	'insider-about' => 'A propòsit ëd Magister',
+	'insider-about-page' => "Proget:Lòn ch'a l'é un magister?",
+	'insider-desc' => 'Estension për presentassion dij magister ëd destinassion dzor la bara lateral',
+);
+
 /** Portuguese (português)
  */
 $messages['pt'] = array(
