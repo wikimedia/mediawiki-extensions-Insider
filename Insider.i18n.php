@@ -216,9 +216,12 @@ $messages['pt'] = array(
 );
 
 /** Romanian (română)
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'insider-title' => 'Docents',
+	'insider-about' => 'Despre docenți',
+	'insider-about-page' => 'Proiect:Ce este un docent?',
 );
 
 /** Russian (русский)
