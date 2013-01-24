@@ -208,11 +208,12 @@ $messages['pms'] = array(
 );
 
 /** Portuguese (português)
+ * @author Carlb
  */
 $messages['pt'] = array(
 	'insider-title' => 'Docentes do destino',
 	'insider-about' => 'Sobre docentes',
-	'insider-about-page' => 'Project:O quê é um docente?',
+	'insider-about-page' => 'Project:O que é um docente?',
 );
 
 /** Romanian (română)
