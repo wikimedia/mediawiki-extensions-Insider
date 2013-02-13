@@ -151,6 +151,15 @@ $messages['ja'] = array(
 	'insider-about-page' => 'Project:Docentとは?',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'insider-title' => 'ექსპერტები',
+	'insider-about' => 'ექსპერტების შესახებ',
+	'insider-about-page' => 'Project:რა არის ექსპერტი?',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
