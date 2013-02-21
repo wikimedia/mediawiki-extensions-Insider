@@ -235,6 +235,16 @@ $messages['ro'] = array(
 	'insider-about-page' => 'Proiect:Ce este un docent?',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'insider-title' => 'Docende de destinazione',
+	'insider-about' => 'Sus a le Docende',
+	'insider-about-page' => "Project:Ce jè 'nu docende?",
+	'insider-desc' => 'Estenzione pa presendazione de le docende de destinazione sus a barre laterale',
+);
+
 /** Russian (русский)
  */
 $messages['ru'] = array(
