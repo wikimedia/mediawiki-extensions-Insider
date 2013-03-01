@@ -170,6 +170,16 @@ $messages['ko'] = array(
 	'insider-desc' => '사이드바에 대상 docents의 발표를 위한 확장 기능',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'insider-title' => 'Pamandu wisata',
+	'insider-about' => 'Tantang pamandu',
+	'insider-about-page' => 'Project:Apo tu pamandu wisata?',
+	'insider-desc' => 'Tambahan untuak manampakan pamandu wisata pado sidebar',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
