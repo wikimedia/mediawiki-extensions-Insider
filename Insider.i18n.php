@@ -22,7 +22,9 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'insider-title' => 'Title for the insider panel',
 	'insider-about' => 'Text for the last link, below all insiders, to insiders explanation page',
-	'insider-about-page' => 'Page title for the last link, below all insiders, to insiders explanation page',
+	'insider-about-page' => 'Page title for the last link, below all insiders, to insiders explanation page.
+
+About "docent", see [[w:wikivoyage:Wikivoyage:What_is_a_docent%3F|Wikivoyage:What_is_a_docent?]].',
 	'insider-desc' => '{{desc|name=Insider|url=http://www.mediawiki.org/wiki/Extension:Insider}}',
 );
 
@@ -148,7 +150,7 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'insider-title' => 'Docents',
 	'insider-about' => 'Docents について',
-	'insider-about-page' => 'Project:Docentとは?',
+	'insider-about-page' => 'Project:ガイドとは?',
 );
 
 /** Georgian (ქართული)
