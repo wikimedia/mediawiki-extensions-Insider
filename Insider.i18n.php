@@ -172,6 +172,16 @@ $messages['ko'] = array(
 	'insider-desc' => '사이드바에 대상 docents의 발표를 위한 확장 기능',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'insider-title' => 'Föhrer för de Ööd',
+	'insider-about' => 'Övver de Föhrer för de Ööd',
+	'insider-about-page' => 'Project:Wadd_ess_enne Föhrer?',
+	'insider-desc' => 'E Zohsazprojramm för Föhrer för de Ööd_aam de Kant vun dä Sigg annzezeije.',
+);
+
 /** Minangkabau (Baso Minangkabau)
  * @author Iwan Novirion
  */
