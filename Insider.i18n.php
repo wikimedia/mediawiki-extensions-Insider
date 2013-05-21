@@ -182,6 +182,14 @@ $messages['ksh'] = array(
 	'insider-desc' => 'E Zohsazprojramm för Föhrer för de Ööd_aam de Kant vun dä Sigg annzezeije.',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'insider-about' => 'Iwwer Dozenten',
+	'insider-about-page' => 'Project:Wat ass een Dozent?',
+);
+
 /** Minangkabau (Baso Minangkabau)
  * @author Iwan Novirion
  */
