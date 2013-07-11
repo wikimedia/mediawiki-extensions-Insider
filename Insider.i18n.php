@@ -75,6 +75,16 @@ $messages['es'] = array(
 	'insider-desc' => 'Presentación de las guías de destino en la barra lateral',
 );
 
+/** Persian (فارسی)
+ * @author Reza1615
+ */
+$messages['fa'] = array(
+	'insider-title' => 'بخش تدریس',
+	'insider-about' => 'درباره تدریس',
+	'insider-about-page' => 'Project:تدریس چیست؟',
+	'insider-desc' => 'افزونه برای معرفی آموزش تدریس در نوار ابزار',
+);
+
 /** Finnish (suomi)
  * @author Nike
  */
