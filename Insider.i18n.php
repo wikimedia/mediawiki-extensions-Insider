@@ -310,6 +310,16 @@ $messages['sv'] = array(
 	'insider-about-page' => 'Project:Guider',
 );
 
+/** Ukrainian (українська)
+ * @author Andriykopanytsia
+ */
+$messages['uk'] = array(
+	'insider-title' => 'Призначення фахівців',
+	'insider-about' => 'Про фахівців',
+	'insider-about-page' => 'Проект: хто такий фахівець?',
+	'insider-desc' => 'Розширення для презентації призначення фахівців на бічній панелі',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
