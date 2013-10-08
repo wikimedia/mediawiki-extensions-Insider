@@ -296,11 +296,13 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (русский)
+ * @author Okras
  */
 $messages['ru'] = array(
 	'insider-title' => 'Эксперты',
 	'insider-about' => 'Об экспертах',
 	'insider-about-page' => 'Project:Эксперты',
+	'insider-desc' => 'Расширение для представления экспертов на боковой панели',
 );
 
 /** Sinhala (සිංහල)
