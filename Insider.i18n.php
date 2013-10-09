@@ -345,3 +345,12 @@ $messages['vi'] = array(
 $messages['zh'] = array(
 	'insider-title' => 'Docents',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Liuxinyu970226
+ * @author Qiyue2001
+ */
+$messages['zh-hans'] = array(
+	'insider-title' => 'Docents',
+	'insider-about-page' => '计划:What is a docent?',
+);
