@@ -349,8 +349,11 @@ $messages['zh'] = array(
 /** Simplified Chinese (中文（简体）‎)
  * @author Liuxinyu970226
  * @author Qiyue2001
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
 	'insider-title' => 'Docents',
+	'insider-about' => '关于Docents',
 	'insider-about-page' => '计划:What is a docent?',
+	'insider-desc' => '侧边栏上的演示讲解员扩展',
 );
