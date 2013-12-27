@@ -165,12 +165,14 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'insider-title' => 'Docents',
-	'insider-about' => 'Docents について',
-	'insider-about-page' => 'Project:ガイドとは?',
+	'insider-title' => '当地の解説案内者',
+	'insider-about' => '解説案内者について',
+	'insider-about-page' => 'Project:解説案内者とは?',
+	'insider-desc' => 'サイドバーに当地の解説案内者を表示する拡張機能',
 );
 
 /** Georgian (ქართული)
