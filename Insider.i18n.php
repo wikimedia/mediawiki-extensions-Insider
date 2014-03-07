@@ -317,11 +317,13 @@ $messages['si'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Lokal Profil
  */
 $messages['sv'] = array(
 	'insider-title' => 'Guider',
 	'insider-about' => 'Om guider',
 	'insider-about-page' => 'Project:Guider',
+	'insider-desc' => 'Tillägg för presentation av guider i sidofältet',
 );
 
 /** Ukrainian (українська)
