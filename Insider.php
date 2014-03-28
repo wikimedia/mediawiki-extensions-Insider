@@ -8,6 +8,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgAutoloadClasses['Insider'] = __DIR__ . '/Insider.class.php';
 
 // extension & magic words i18n
+$wgMessagesDirs['Insider'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Insider'] = __DIR__ . '/Insider.i18n.php';
 $wgExtensionMessagesFiles['InsiderMagic'] = __DIR__ . '/Insider.i18n.magic.php';
 
@@ -31,5 +32,5 @@ $wgExtensionCredits['parserhook']['Insider'] = array(
 	'url' => '//www.mediawiki.org/wiki/Extension:Insider',
 	'descriptionmsg' => 'insider-desc',
 	'author' => array( 'Roland Unger', 'Hans Musil', 'Matthias Mullie' ),
-	'version' => '1.01'
+	'version' => '1.2.0'
 );
