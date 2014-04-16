@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Gomoko"
-        ]
-    },
-    "insider-title": "Enseignants",
-    "insider-about": "Sur enseignants",
-    "insider-about-page": "Project:Enseignants",
-    "insider-desc": "Présentation des guides de destination dans la barre latérale"
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	},
+	"insider-title": "Enseignants",
+	"insider-about": "Sur enseignants",
+	"insider-about-page": "Project:Enseignants",
+	"insider-desc": "Présentation des guides de destination dans la barre latérale"
 }
