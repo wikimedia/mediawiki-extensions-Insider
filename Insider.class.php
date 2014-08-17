@@ -1,7 +1,7 @@
 <?php
 
 class Insider {
-	var $mInsiderSet = array();
+	public $mInsiderSet = array();
 
 	/**
 	 * @param Parser $parser
