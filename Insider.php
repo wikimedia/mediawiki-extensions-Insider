@@ -1,36 +1,14 @@
 <?php
-
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'Insider' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['Insider'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['InsiderMagic'] = __DIR__ . '/Insider.i18n.magic.php';
+	/*wfWarn(
+		'Deprecated PHP entry point used for Insider extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);*/
+	return;
+} else {
+	die( 'This version of the Insider extension requires MediaWiki 1.25+' );
 }
-
-// autoloader
-$wgAutoloadClasses['Insider'] = __DIR__ . '/Insider.class.php';
-
-// extension & magic words i18n
-$wgMessagesDirs['Insider'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['Insider'] = __DIR__ . '/Insider.i18n.php';
-$wgExtensionMessagesFiles['InsiderMagic'] = __DIR__ . '/Insider.i18n.magic.php';
-
-// hooks
-$wgInsider = new Insider;
-$wgHooks['ParserFirstCallInit'][] = 'Insider::parserHooks';
-$wgHooks['SkinTemplateOutputPageBeforeExec'][] = array( &$wgInsider, 'onSkinTemplateOutputPageBeforeExec' );
-$wgHooks['ParserClearState'][] = array( &$wgInsider, 'onParserClearState' );
-$wgHooks['ParserBeforeTidy'][] = array( &$wgInsider, 'onParserBeforeTidy' );
-
-// 2 same hooks, with different position though - enable what you want
-// the first one is a "clean" solution, but has its content inserted _before_ the toolbox
-//$wgHooks['SkinBuildSidebar'][] = array( &$wgInsider, 'onSkinBuildSidebar' );
-// the second one is nasty: echo'ing raw html _after_ the regular toolbox
-$wgHooks['SkinTemplateToolboxEnd'][] = array( &$wgInsider, 'onSkinTemplateToolboxEnd' );
-
-// credits
-$wgExtensionCredits['parserhook']['Insider'] = array(
-	'path' => __FILE__,
-	'name' => 'Insider',
-	'url' => '//www.mediawiki.org/wiki/Extension:Insider',
-	'descriptionmsg' => 'insider-desc',
-	'author' => array( 'Roland Unger', 'Hans Musil', 'Matthias Mullie' ),
-	'version' => '1.2.0'
-);

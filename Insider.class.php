@@ -1,22 +1,21 @@
 <?php
 
 class Insider {
-	public $mInsiderSet = array();
+	public static $mInsiderSet = array();
 
 	/**
 	 * @param Parser $parser
 	 * @return bool
 	 */
-	public static function parserHooks( Parser &$parser ) {
-		global $wgInsider;
-		$parser->setFunctionHook( 'insider', array( &$wgInsider, 'onFuncInsider' ) );
+	public static function onParserFirstCallInit( Parser &$parser ) {
+		$parser->setFunctionHook( 'insider', array( 'Insider', 'onFuncInsider' ) );
 		return true;
 	}
 
 	/**
 	 * @return CustomData
 	 */
-	public function getCustomData() {
+	public static function getCustomData() {
 		global $wgCustomData;
 
 		if ( !$wgCustomData instanceof CustomData ) {
@@ -30,17 +29,17 @@ class Insider {
 	 * @param Parser $parser
 	 * @return bool
 	 */
-	public function onParserClearState( Parser &$parser ) {
-		$this->mInsiderSet = array();
+	public static function onParserClearState( Parser &$parser ) {
+		self::$mInsiderSet = array();
 		return true;
 	}
 
-	public function onFuncInsider() {
+	public static function onFuncInsider() {
 		$args = func_get_args();
 		array_shift( $args );
 
 		foreach ( $args as $insider ) {
-			$this->mInsiderSet[] = $insider;
+			self::$mInsiderSet[] = $insider;
 		}
 
 		return '';
@@ -53,9 +52,9 @@ class Insider {
 	 * @param string $text
 	 * @return bool
 	 */
-	public function onParserBeforeTidy( Parser &$parser, &$text ) {
-		if ( $this->mInsiderSet ) {
-			$this->getCustomData()->setParserData( $parser->mOutput, 'Insider', $this->mInsiderSet );
+	public static function onParserBeforeTidy( Parser &$parser, &$text ) {
+		if ( self::$mInsiderSet ) {
+			self::getCustomData()->setParserData( $parser->mOutput, 'Insider', self::$mInsiderSet );
 		}
 
 		return true;
@@ -68,10 +67,10 @@ class Insider {
 	 * @param QuickTemplate $QuickTmpl
 	 * @return bool
 	 */
-	public function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skinTpl, &$QuickTmpl ) {
+	public static function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skinTpl, &$QuickTmpl ) {
 		global $wgOut;
 
-		$customData = $this->getCustomData();
+		$customData = self::getCustomData();
 
 		// Fill the Insider array.
 		$insiders = $customData->getPageData( $wgOut, 'Insider' );
@@ -84,7 +83,7 @@ class Insider {
 	 * @param array $insiders
 	 * @return array
 	 */
-	protected function getInsiderUrls( array $insiders ) {
+	protected static function getInsiderUrls( array $insiders ) {
 		$insiderUrls = array();
 
 		foreach ( $insiders as $insider ) {
@@ -111,15 +110,15 @@ class Insider {
 	 * @param array $bar
 	 * @return bool
 	 */
-	public function onSkinBuildSidebar( $skin, &$bar ) {
+	public static function onSkinBuildSidebar( $skin, &$bar ) {
 		$out = $skin->getOutput();
-		$insiders = $this->getCustomData()->getParserData( $out, 'Insider' );
+		$insiders = self::getCustomData()->getParserData( $out, 'Insider' );
 
 		if ( count( $insiders ) == 0 ) {
 			return true;
 		}
 
-		$insiderUrls = $this->getInsiderUrls( $insiders );
+		$insiderUrls = self::getInsiderUrls( $insiders );
 
 		// build insider <li>'s
 		$insiders = array();
@@ -158,14 +157,14 @@ class Insider {
 	 * @param SkinTemplate|VectorTemplate $skinTpl
 	 * @return bool
 	 */
-	public function onSkinTemplateToolboxEnd( &$skinTpl ) {
-		$insiders = $this->getCustomData()->getSkinData( $skinTpl, 'Insider' );
+	public static function onSkinTemplateToolboxEnd( &$skinTpl ) {
+		$insiders = self::getCustomData()->getSkinData( $skinTpl, 'Insider' );
 
 		if ( count( $insiders ) == 0 ) {
 			return true;
 		}
 
-		$insiderUrls = $this->getInsiderUrls( $insiders );
+		$insiderUrls = self::getInsiderUrls( $insiders );
 
 		// build insider <li>'s
 		$insiders = array();

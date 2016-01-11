@@ -1,0 +1,41 @@
+{
+	"name": "Insider",
+	"url": "https://www.mediawiki.org/wiki/Extension:Insider",
+	"descriptionmsg": "insider-desc",
+	"author": [
+		"Roland Unger",
+		"Hans Musil",
+		"Matthias Mullie"
+	],
+	"version": "1.2.1",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"Insider": "Insider.class.php"
+	},
+	"MessageDirs": {
+		"Insider": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"InsiderMagic": "Insider.i18n.magic.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"Insider::onParserFirstCallInit"
+		],
+		"SkinTemplateOutputPageBeforeExec": [
+			"Insider::onSkinTemplateOutputPageBeforeExec"
+		],
+		"ParserClearState": [
+			"Insider::onParserClearState"
+		],
+		"ParserBeforeTidy": [
+			"Insider::onParserBeforeTidy"
+		],
+		"SkinTemplateToolboxEnd": [
+			"Insider::onSkinTemplateToolboxEnd"
+		]
+	},
+	"manifest_version": 1
+}
