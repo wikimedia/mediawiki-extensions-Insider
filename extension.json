@@ -7,7 +7,7 @@
 		"Hans Musil",
 		"Matthias Mullie"
 	],
-	"version": "1.2.1",
+	"version": "1.3.0",
 	"type": "parserhook",
 	"AutoloadClasses": {
 		"Insider": "Insider.class.php"
@@ -24,18 +24,10 @@
 		"ParserFirstCallInit": [
 			"Insider::onParserFirstCallInit"
 		],
-		"SkinTemplateOutputPageBeforeExec": [
-			"Insider::onSkinTemplateOutputPageBeforeExec"
+		"OutputPageParserOutput": [
+			"Insider::onOutputPageParserOutput"
 		],
-		"ParserClearState": [
-			"Insider::onParserClearState"
-		],
-		"ParserBeforeTidy": [
-			"Insider::onParserBeforeTidy"
-		],
-		"SkinTemplateToolboxEnd": [
-			"Insider::onSkinTemplateToolboxEnd"
-		]
+		"SidebarBeforeOutput": "Insider::onSidebarBeforeOutput"
 	},
 	"manifest_version": 1
 }
