@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Carlb"
+			"Carlb",
+			"Hamilton Abreu"
 		]
 	},
 	"insider-title": "Docentes do destino",
 	"insider-about": "Sobre docentes",
-	"insider-about-page": "Project:O que é um docente?"
+	"insider-about-page": "Project:O que é um docente?",
+	"insider-desc": "Extensão para apresentação de guias de destino na barra lateral"
 }
