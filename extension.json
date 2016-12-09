@@ -13,7 +13,7 @@
 	"AutoloadClasses": {
 		"Insider": "Insider.class.php"
 	},
-	"MessageDirs": {
+	"MessagesDirs": {
 		"Insider": [
 			"i18n"
 		]
