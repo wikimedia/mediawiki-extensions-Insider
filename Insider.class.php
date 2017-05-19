@@ -58,13 +58,12 @@ class Insider {
 		return true;
 	}
 
-
 	/**
 	 * @param array $insiders
 	 * @return array
 	 */
 	protected static function getInsiderUrls( array $insiders ) {
-		$insiderUrls = array();
+		$insiderUrls = [];
 
 		foreach ( $insiders as $insider ) {
 			// Tribute to Evan
@@ -72,11 +71,11 @@ class Insider {
 
 			$userTitle = Title::newFromText( $insider, NS_USER );
 			if ( $userTitle ) {
-				$insiderUrls[] = array(
+				$insiderUrls[] = [
 					'href' => $userTitle->getLocalURL(),
 					'text' => $userTitle->getText(),
 					'class' => 'interwiki-insider'
-				);
+				];
 			}
 		}
 
@@ -102,7 +101,7 @@ class Insider {
 		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 
 		// build insider <li>'s
-		$list = array();
+		$list = [];
 		foreach ( $insiders as $insider ) {
 			// Tribute to Evan
 			$insider = urldecode( $insider );
@@ -120,14 +119,14 @@ class Insider {
 		$title = Title::newFromText( wfMessage( 'insider-about-page' )->inContentLanguage()->plain() );
 		if ( $title ) {
 			$list[] =
-				Html::rawElement( 'li', array( 'class' => 'interwiki-insider' ),
+				Html::rawElement( 'li', [ 'class' => 'interwiki-insider' ],
 					$linkRenderer->makeLink( $title, $skin->msg( 'insider-about' )->text() )
 				);
 		}
 
 		// build complete html
 		$bar[$skin->msg( 'insider-title' )->text()] =
-			Html::rawElement( 'ul', array(),
+			Html::rawElement( 'ul', [],
 				implode( '', $list )
 			);
 
