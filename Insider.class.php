@@ -21,7 +21,7 @@ use MediaWiki\MediaWikiServices;
 
 class Insider {
 	/**
-	 * @param Parser $parser
+	 * @param Parser &$parser
 	 * @return bool
 	 */
 	public static function onParserFirstCallInit( Parser &$parser ) {
@@ -29,6 +29,10 @@ class Insider {
 		return true;
 	}
 
+	/**
+	 * @param Parser $parser
+	 * @return string
+	 */
 	public static function onFuncInsider( Parser $parser ) {
 		$args = func_get_args();
 		array_shift( $args );
@@ -45,6 +49,11 @@ class Insider {
 		return '';
 	}
 
+	/**
+	 * @param OutputPage &$out
+	 * @param ParserOutput $parserOutput
+	 * @return true
+	 */
 	public static function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parserOutput ) {
 		$related = $parserOutput->getExtensionData( 'Insider' );
 
@@ -86,7 +95,7 @@ class Insider {
 	 * Write out HTML-code.
 	 *
 	 * @param Skin $skin
-	 * @param array $bar
+	 * @param array &$bar
 	 * @return bool
 	 */
 	public static function onSidebarBeforeOutput( $skin, &$bar ) {
