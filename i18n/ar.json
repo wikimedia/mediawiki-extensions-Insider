@@ -1,4 +1,11 @@
 {
-	"@metadata": [],
-	"insider-title": "Docents"
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"insider-title": "Docents",
+	"insider-about": "حول المعلمين",
+	"insider-about-page": "مشروع:ما هو المدرس؟",
+	"insider-desc": "ملحق لعرض وثائق الوجهة في الشريط الجانبي"
 }
