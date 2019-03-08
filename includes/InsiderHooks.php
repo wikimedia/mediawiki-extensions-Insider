@@ -19,13 +19,13 @@
 
 use MediaWiki\MediaWikiServices;
 
-class Insider {
+class InsiderHooks {
 	/**
 	 * @param Parser &$parser
 	 * @return bool
 	 */
 	public static function onParserFirstCallInit( Parser &$parser ) {
-		$parser->setFunctionHook( 'insider', 'Insider::onFuncInsider' );
+		$parser->setFunctionHook( 'insider', 'InsiderHooks::onFuncInsider' );
 		return true;
 	}
 

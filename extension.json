@@ -11,7 +11,7 @@
 	"license-name": "GPL-2.0-only",
 	"type": "parserhook",
 	"AutoloadClasses": {
-		"Insider": "Insider.class.php"
+		"InsiderHooks": "includes/InsiderHooks.php"
 	},
 	"MessagesDirs": {
 		"Insider": [
@@ -23,12 +23,12 @@
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
-			"Insider::onParserFirstCallInit"
+			"InsiderHooks::onParserFirstCallInit"
 		],
 		"OutputPageParserOutput": [
-			"Insider::onOutputPageParserOutput"
+			"InsiderHooks::onOutputPageParserOutput"
 		],
-		"SidebarBeforeOutput": "Insider::onSidebarBeforeOutput"
+		"SidebarBeforeOutput": "InsiderHooks::onSidebarBeforeOutput"
 	},
 	"manifest_version": 1
 }
