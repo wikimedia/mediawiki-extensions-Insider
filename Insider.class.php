@@ -31,12 +31,10 @@ class Insider {
 
 	/**
 	 * @param Parser $parser
+	 * @param string ...$args
 	 * @return string
 	 */
-	public static function onFuncInsider( Parser $parser ) {
-		$args = func_get_args();
-		array_shift( $args );
-
+	public static function onFuncInsider( Parser $parser, ...$args ) {
 		$parserOutput = $parser->getOutput();
 		$insiders = $parserOutput->getExtensionData( 'Insider' ) ?: [];
 
