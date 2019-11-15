@@ -21,10 +21,10 @@ use MediaWiki\MediaWikiServices;
 
 class InsiderHooks {
 	/**
-	 * @param Parser &$parser
+	 * @param Parser $parser
 	 * @return bool
 	 */
-	public static function onParserFirstCallInit( Parser &$parser ) {
+	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setFunctionHook( 'insider', 'InsiderHooks::onFuncInsider' );
 		return true;
 	}
@@ -48,11 +48,11 @@ class InsiderHooks {
 	}
 
 	/**
-	 * @param OutputPage &$out
+	 * @param OutputPage $out
 	 * @param ParserOutput $parserOutput
 	 * @return true
 	 */
-	public static function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parserOutput ) {
+	public static function onOutputPageParserOutput( OutputPage $out, ParserOutput $parserOutput ) {
 		$related = $parserOutput->getExtensionData( 'Insider' );
 
 		if ( $related ) {
