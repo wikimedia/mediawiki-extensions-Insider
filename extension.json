@@ -22,12 +22,8 @@
 		"InsiderMagic": "Insider.i18n.magic.php"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"InsiderHooks::onParserFirstCallInit"
-		],
-		"OutputPageParserOutput": [
-			"InsiderHooks::onOutputPageParserOutput"
-		],
+		"ParserFirstCallInit": "InsiderHooks::onParserFirstCallInit",
+		"OutputPageParserOutput": "InsiderHooks::onOutputPageParserOutput",
 		"SidebarBeforeOutput": "InsiderHooks::onSidebarBeforeOutput"
 	},
 	"manifest_version": 1
