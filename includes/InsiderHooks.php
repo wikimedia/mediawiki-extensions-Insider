@@ -115,27 +115,26 @@ class InsiderHooks {
 
 			$userTitle = Title::newFromText( $insider, NS_USER );
 			if ( $userTitle ) {
-				$list[] = Html::rawElement(
-					'li', [ 'class' => 'interwiki-insider' ],
-					$linkRenderer->makeLink( $userTitle, $userTitle->getText() )
-				);
+				$list[] = [
+					'text' => $userTitle->getText(),
+					'class' => 'interwiki-insider',
+					'href' => $userTitle->getLocalUrl(),
+				];
 			}
 		}
 
 		// add general "insiders" entry
 		$title = Title::newFromText( wfMessage( 'insider-about-page' )->inContentLanguage()->plain() );
 		if ( $title ) {
-			$list[] =
-				Html::rawElement( 'li', [ 'class' => 'interwiki-insider' ],
-					$linkRenderer->makeLink( $title, $skin->msg( 'insider-about' )->text() )
-				);
+			$list[] = [
+				'class' => 'interwiki-insider',
+				'text' => $skin->msg( 'insider-about' )->text(),
+				'href' => $title->getLocalUrl(),
+			];
 		}
 
 		// build complete html
-		$bar[$skin->msg( 'insider-title' )->text()] =
-			Html::rawElement( 'ul', [],
-				implode( '', $list )
-			);
+		$bar[$skin->msg( 'insider-title' )->text()] = $list;
 
 		return true;
 	}
