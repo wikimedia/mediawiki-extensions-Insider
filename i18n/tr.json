@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"insider-title": "Hedef Belgeleri",
 	"insider-about": "Belgeler Hakkında",
 	"insider-about-page": "Project:Doküman nedir?",
-	"insider-desc": "Hedef belgelerin kenar çubuğunda sunumu için uzatma"
+	"insider-desc": "Kenar çubuğunda hedef belgelerin sunumu için uzantı"
 }
