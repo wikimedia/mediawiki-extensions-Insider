@@ -57,9 +57,6 @@ class InsiderHooks {
 
 		if ( $related ) {
 			$out->setProperty( 'Insider', $related );
-		} elseif ( isset( $parserOutput->mCustomData['Insider'] ) ) {
-			// back-compat: Check for CustomData stuff
-			$out->setProperty( 'Insider', $parserOutput->mCustomData['Insider'] );
 		}
 
 		return true;
