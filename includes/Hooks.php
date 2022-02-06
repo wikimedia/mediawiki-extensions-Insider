@@ -17,15 +17,22 @@
  * @file
  */
 
-use MediaWiki\MediaWikiServices;
+namespace MediaWiki\Extension\Insider;
 
-class InsiderHooks {
+use MediaWiki\MediaWikiServices;
+use OutputPage;
+use Parser;
+use ParserOutput;
+use Skin;
+use Title;
+
+class Hooks {
 	/**
 	 * @param Parser $parser
 	 * @return bool
 	 */
 	public static function onParserFirstCallInit( Parser $parser ) {
-		$parser->setFunctionHook( 'insider', 'InsiderHooks::onFuncInsider' );
+		$parser->setFunctionHook( 'insider', [ self::class, 'onFuncInsider' ] );
 		return true;
 	}
 

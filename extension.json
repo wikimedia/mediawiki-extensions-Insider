@@ -13,8 +13,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.29.0"
 	},
-	"AutoloadClasses": {
-		"InsiderHooks": "includes/InsiderHooks.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Insider\\": "includes/"
 	},
 	"MessagesDirs": {
 		"Insider": [
@@ -25,9 +25,9 @@
 		"InsiderMagic": "Insider.i18n.magic.php"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "InsiderHooks::onParserFirstCallInit",
-		"OutputPageParserOutput": "InsiderHooks::onOutputPageParserOutput",
-		"SidebarBeforeOutput": "InsiderHooks::onSidebarBeforeOutput"
+		"ParserFirstCallInit": "MediaWiki\\Extension\\Insider\\Hooks::onParserFirstCallInit",
+		"OutputPageParserOutput": "MediaWiki\\Extension\\Insider\\Hooks::onOutputPageParserOutput",
+		"SidebarBeforeOutput": "MediaWiki\\Extension\\Insider\\Hooks::onSidebarBeforeOutput"
 	},
 	"manifest_version": 2
 }
