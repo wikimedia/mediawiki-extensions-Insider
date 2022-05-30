@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"Siebrand"
 		]
 	},
 	"insider-title": "Docents",
 	"insider-about": "Over docenten",
-	"insider-about-page": "{{ns:project}}:Wat is een docent?",
+	"insider-about-page": "Project:Wat is een docent?",
 	"insider-desc": "Uitbreiding voor presentatie van bestemmingsdocenten in de navigatiekolom"
 }
