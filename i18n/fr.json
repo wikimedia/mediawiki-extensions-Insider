@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gomoko"
+			"Gomoko",
+			"Verdy p"
 		]
 	},
-	"insider-title": "Enseignants",
-	"insider-about": "Sur enseignants",
-	"insider-about-page": "Project:Enseignants",
-	"insider-desc": "Présentation des guides de destination dans la barre latérale"
+	"insider-title": "Guides locaux",
+	"insider-about": "À propos des guides locaux",
+	"insider-about-page": "Project:Qu’est-ce qu’un guide local ?",
+	"insider-desc": "Extension qui présente des guides locaux dans la barre latérale"
 }
