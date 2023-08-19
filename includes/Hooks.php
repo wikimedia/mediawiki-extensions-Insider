@@ -20,11 +20,11 @@
 namespace MediaWiki\Extension\Insider;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use OutputPage;
 use Parser;
 use ParserOutput;
 use Skin;
-use Title;
 
 class Hooks {
 	/**
