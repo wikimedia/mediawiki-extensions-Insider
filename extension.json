@@ -25,9 +25,14 @@
 		"InsiderMagic": "Insider.i18n.magic.php"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "MediaWiki\\Extension\\Insider\\Hooks::onParserFirstCallInit",
-		"OutputPageParserOutput": "MediaWiki\\Extension\\Insider\\Hooks::onOutputPageParserOutput",
-		"SidebarBeforeOutput": "MediaWiki\\Extension\\Insider\\Hooks::onSidebarBeforeOutput"
+		"ParserFirstCallInit": "main",
+		"OutputPageParserOutput": "main",
+		"SidebarBeforeOutput": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\Insider\\Hooks"
+		}
 	},
 	"manifest_version": 2
 }

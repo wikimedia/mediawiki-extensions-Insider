@@ -19,6 +19,9 @@
 
 namespace MediaWiki\Extension\Insider;
 
+use MediaWiki\Hook\OutputPageParserOutputHook;
+use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use OutputPage;
@@ -26,14 +29,16 @@ use Parser;
 use ParserOutput;
 use Skin;
 
-class Hooks {
+class Hooks implements
+	ParserFirstCallInitHook,
+	OutputPageParserOutputHook,
+	SidebarBeforeOutputHook
+{
 	/**
 	 * @param Parser $parser
-	 * @return bool
 	 */
-	public static function onParserFirstCallInit( Parser $parser ) {
+	public function onParserFirstCallInit( $parser ) {
 		$parser->setFunctionHook( 'insider', [ self::class, 'onFuncInsider' ] );
-		return true;
 	}
 
 	/**
@@ -57,16 +62,13 @@ class Hooks {
 	/**
 	 * @param OutputPage $out
 	 * @param ParserOutput $parserOutput
-	 * @return true
 	 */
-	public static function onOutputPageParserOutput( OutputPage $out, ParserOutput $parserOutput ) {
+	public function onOutputPageParserOutput( $out, $parserOutput ): void {
 		$related = $parserOutput->getExtensionData( 'Insider' );
 
 		if ( $related ) {
 			$out->setProperty( 'Insider', $related );
 		}
-
-		return true;
 	}
 
 	/**
@@ -98,14 +100,13 @@ class Hooks {
 	 *
 	 * @param Skin $skin
 	 * @param array &$bar
-	 * @return bool
 	 */
-	public static function onSidebarBeforeOutput( $skin, &$bar ) {
+	public function onSidebarBeforeOutput( $skin, &$bar ): void {
 		$out = $skin->getOutput();
 		$insiders = $out->getProperty( 'Insider' );
 
 		if ( !$insiders ) {
-			return true;
+			return;
 		}
 
 		$insiderUrls = self::getInsiderUrls( $insiders );
@@ -139,7 +140,5 @@ class Hooks {
 
 		// build complete html
 		$bar[$skin->msg( 'insider-title' )->text()] = $list;
-
-		return true;
 	}
 }
