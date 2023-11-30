@@ -1,6 +1,11 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Ziko"
+		]
 	},
-	"insider-title": "Docents"
+	"insider-title": "Docents",
+	"insider-about": "Pri docentoj",
+	"insider-about-page": "Projekto: Kio estas docento?",
+	"insider-desc": "Etendaĵo por prezenti docentojn pri cel-loko sur la flanka kolumno"
 }
