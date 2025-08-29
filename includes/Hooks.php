@@ -21,7 +21,6 @@ namespace MediaWiki\Extension\Insider;
 
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\Hook\OutputPageParserOutputHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\Parser;
@@ -72,30 +71,6 @@ class Hooks implements
 	}
 
 	/**
-	 * @param array $insiders
-	 * @return array
-	 */
-	protected static function getInsiderUrls( array $insiders ) {
-		$insiderUrls = [];
-
-		foreach ( $insiders as $insider ) {
-			// Tribute to Evan
-			$insider = urldecode( $insider );
-
-			$userTitle = Title::newFromText( $insider, NS_USER );
-			if ( $userTitle ) {
-				$insiderUrls[] = [
-					'href' => $userTitle->getLocalURL(),
-					'text' => $userTitle->getText(),
-					'class' => 'interwiki-insider'
-				];
-			}
-		}
-
-		return $insiderUrls;
-	}
-
-	/**
 	 * Write out HTML-code.
 	 *
 	 * @param Skin $skin
@@ -108,9 +83,6 @@ class Hooks implements
 		if ( !$insiders ) {
 			return;
 		}
-
-		$insiderUrls = self::getInsiderUrls( $insiders );
-		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 
 		// build insider <li>'s
 		$list = [];
