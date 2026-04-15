@@ -19,12 +19,12 @@
 
 namespace MediaWiki\Extension\Insider;
 
-use MediaWiki\Hook\ParserFirstCallInitHook;
-use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Output\Hook\OutputPageParserOutputHook;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Parser\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\ParserOutput;
+use MediaWiki\Skin\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Skin\Skin;
 use MediaWiki\Title\Title;
 
